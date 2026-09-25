@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import PopupWidget from "./popupWidget";
+import PopupWidget from "./PopupWidget";
 
 export default function Contact() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
