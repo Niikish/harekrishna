@@ -31,7 +31,7 @@ const Footer = () => {
             </p>
 
             <div className="flex gap-4">
-              <Link href="https://facebook.com" target="_blank">
+              <Link href="https://www.facebook.com/share/1U4HreVJ46/?mibextid=wwXIfr" target="_blank">
                 <svg
                   className="w-6 h-6 text-green-700 hover:text-green-500 transition-colors"
                   fill="currentColor"
@@ -49,7 +49,7 @@ const Footer = () => {
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
               </Link>
-              <Link href="https://www.instagram.com/harekrishna_developers108?igsh=MTRjanBvemR5bTV3Zw%3D%3D&utm_source=qr" target="_blank">
+              <Link href="https://www.instagram.com/harekrishna_projects108?stkn=azkxZzN4bTQyOXVt&utm_source=qr" target="_blank">
                 <svg
                   className="w-6 h-6 text-green-700 hover:text-green-500 transition-colors"
                   fill="currentColor"
@@ -58,7 +58,7 @@ const Footer = () => {
                   <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm8.75 2.75a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" />
                 </svg>
               </Link>
-              <Link href="https://www.linkedin.com/company/hare-krishna-home-decor-developers" target="_blank">
+              <Link href="https://www.linkedin.com/company/hare-krishna-home-decor-developers/" target="_blank">
                 <svg
                   className="w-6 h-6 text-green-700 hover:text-green-500 transition-colors"
                   fill="currentColor"
@@ -76,7 +76,7 @@ const Footer = () => {
                   <path d="M20.5 3.5A11.49 11.49 0 0 0 12 0C5.37 0 .01 5.37.01 12c0 2.12.55 4.17 1.6 5.97L0 24l6.2-1.61a11.96 11.96 0 0 0 5.8 1.5c6.63 0 12-5.37 12-12 0-3.19-1.24-6.2-3.5-8.49zM12 22c-1.77 0-3.5-.46-5.02-1.33l-.36-.2-3.68.96.98-3.6-.23-.37A9.93 9.93 0 0 1 2 12C2 6.49 6.49 2 12 2s10 4.49 10 10-4.49 10-10 10zm5.09-7.37c-.29-.15-1.7-.84-1.96-.93-.26-.1-.45-.15-.64.15s-.73.93-.9 1.12c-.17.2-.33.22-.62.07a8.11 8.11 0 0 1-2.4-1.5 9.02 9.02 0 0 1-1.66-2.06c-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.5.15-.17.2-.29.3-.48.1-.2.05-.37-.03-.52-.08-.15-.64-1.54-.88-2.1-.23-.55-.47-.47-.65-.47h-.55c-.18 0-.47.07-.7.34a2.94 2.94 0 0 0-1 2.17c0 1.28.91 2.52 1.04 2.7.14.18 1.79 2.73 4.34 3.82.61.26 1.08.42 1.45.54.61.19 1.16.16 1.6.1.49-.07 1.5-.61 1.71-1.2.21-.58.21-1.07.15-1.17-.06-.1-.26-.15-.55-.3z" />
                 </svg>
               </Link>
-              <Link href="https://www.youtube.com/@HareKrishnaDevelopers" target="_blank">
+              <Link href="https://youtube.com/@harekrishnaprojects?si=p7RtY_0_HvD090kh" target="_blank">
                 <svg
                   className="w-6 h-6 text-green-700 hover:text-green-500 transition-colors"
                   fill="currentColor"
