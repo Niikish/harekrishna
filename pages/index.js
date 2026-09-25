@@ -25,11 +25,11 @@ export default function Main() {
       <ScrollToTop />
       <Home />
       <Wecare />
-      <Carousel/>
-      <Founder/>
-      <BusinessCategories/>
+      <Carousel />
+      <Founder />
+      <BusinessCategories />
       <Services />
-      <SocialMediaPage/>
+      {/* <SocialMediaPage/> */}
       <Contact />
       <Footer />
       <FadeUp />
