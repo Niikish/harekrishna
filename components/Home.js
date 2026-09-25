@@ -1,12 +1,23 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
+  const videoRef = useRef(null);
 
   useEffect(() => {
     setMounted(true);
+    if (videoRef.current) {
+      videoRef.current.defaultMuted = true;
+      videoRef.current.muted = true;
+      const playPromise = videoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((error) => {
+          console.log("Autoplay blocked by mobile browser:", error);
+        });
+      }
+    }
   }, []);
 
   return (
@@ -14,12 +25,15 @@ export default function Home() {
       {/* Background Video with Responsive Cover */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <video
+          ref={videoRef}
           src="/videos/2835998-uhd_3840_2160_24fps.mp4"
           className="w-full h-full object-cover object-center filter brightness-[0.7] contrast-110 saturate-110"
           autoPlay
           playsInline
+          webkit-playsinline="true"
           muted
           loop
+          preload="auto"
           aria-hidden="true"
         ></video>
       </div>
