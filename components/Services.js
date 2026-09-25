@@ -60,7 +60,7 @@ export default function Services() {
     { id: "construction", name: "Construction" },
     { id: "design", name: "Design" },
     { id: "property", name: "Property" },
-    { id: "property-transaction", name: "Property Sell & Purchase" },
+    { id: "property-transaction", name: "E-States" },
   ];
 
   const services = [
@@ -87,9 +87,9 @@ export default function Services() {
       features: [
         "Residential Houses",
         "Luxury Apartments",
-        "Road & Highways",  
+        "Road & Highways",
         "Resorts & Hotels",
-       
+
       ],
       cta: "Start Your Project",
       category: "construction"
@@ -110,10 +110,10 @@ export default function Services() {
       ),
       features: [
         "Equipment Installation",
-        "Hiring to Lunch",  
+        "Hiring to Lunch",
         "Layout Construction",
         "Concept Development",
-        
+
       ],
       cta: "Explore Solutions",
       category: "property"
@@ -135,35 +135,35 @@ export default function Services() {
       features: [
         "House Renovation",
         "Moduler Kitchen",
-        "2D/3D Modeling",
-        "Material Selection"
+        "False Ceiling & Lighting",
+        "Wardrobes & Custom Furniture"
       ],
       cta: "Transform Your Space",
       category: "design"
     },
-    {
-      id: 4,
-      title: "Survey",
-      subtitle: "Transforming Spaces With Elegance",
-      description:
-        "Surveying is the path to progress and surveying for safety, building for innovation and we are surving with sensitivity, building with sustainability .",
-      image: "/founder/survy.jpeg",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z" />
-          <polyline points="9 22 9 12 15 12 15 22" />
-          <path d="M5 12a15 15 0 0 0 14 0" />
-        </svg>
-      ),
-      features: [
-        "Residential Design",
-        "Commercial Spaces",
-        "2D/3D",
-        "Material Selection"
-      ],
-      cta: "Transform Your Space",
-      category: "design"
-    },
+    // {
+    //   id: 4,
+    //   title: "Survey",
+    //   subtitle: "Transforming Spaces With Elegance",
+    //   description:
+    //     "Surveying is the path to progress and surveying for safety, building for innovation and we are surving with sensitivity, building with sustainability .",
+    //   image: "/founder/survy.jpeg",
+    //   icon: (
+    //     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    //       <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z" />
+    //       <polyline points="9 22 9 12 15 12 15 22" />
+    //       <path d="M5 12a15 15 0 0 0 14 0" />
+    //     </svg>
+    //   ),
+    //   features: [
+    //     "Residential Design",
+    //     "Commercial Spaces",
+    //     "2D/3D",
+    //     "Material Selection"
+    //   ],
+    //   cta: "Transform Your Space",
+    //   category: "design"
+    // },
     {
       id: 5,
       title: "Gym Setup",
@@ -188,11 +188,11 @@ export default function Services() {
       cta: "Design Your Gym",
       category: "design"
     },
-   
+
     {
       id: 5,
-      title: "Property Sell & Purchase",
-      subtitle: "Seamless Real Estate Transactions",
+      title: "E-state",
+      subtitle: "Seamless E-state Transactions",
       description:
         "Comprehensive property transaction services, from market analysis to closing deals. We simplify your real estate journey with expert guidance and support.",
       image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=800&auto=format&fit=crop",
@@ -206,10 +206,10 @@ export default function Services() {
         </svg>
       ),
       features: [
-        "Property Valuation",
-        "Market Analysis",
-        "Legal Documentation",
-        "Investment Consultation"
+        " Residential Plots Sale",
+        " Independent Houses Sale",
+        " Flats & Apartments Sale",
+        " House with Land Sale"
       ],
       cta: "Explore Property Options",
       category: "property-transaction"
@@ -217,8 +217,8 @@ export default function Services() {
   ];
 
   // Filter services based on active category
-  const filteredServices = activeCategory === "all" 
-    ? services 
+  const filteredServices = activeCategory === "all"
+    ? services
     : services.filter(service => service.category === activeCategory);
 
   return (
@@ -236,18 +236,17 @@ export default function Services() {
           <p className="text-lg text-gray-600 mb-8">
             Professional services delivered with expertise and dedication to transform your vision into reality
           </p>
-          
+
           {/* Category filter buttons */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {categories.map((category) => (
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                  activeCategory === category.id
-                    ? "bg-[#003478] text-white shadow-md"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeCategory === category.id
+                  ? "bg-[#003478] text-white shadow-md"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  }`}
                 aria-pressed={activeCategory === category.id}
               >
                 {category.name}
@@ -293,11 +292,11 @@ export default function Services() {
                     </div>
                     <h3 className="text-xl font-semibold">{service.title}</h3>
                   </div>
-                  
+
                   <p className="text-gray-600 mb-4">
                     {service.description}
                   </p>
-                  
+
                   <div className="mb-6 mt-5">
                     <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-3">Features</h4>
                     <ul className="space-y-2">
@@ -311,19 +310,19 @@ export default function Services() {
                       ))}
                     </ul>
                   </div>
-                  
-                  <a 
+
+                  <a
                     href="https://wa.link/2meebn"
-                    target="_blank" 
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-3 bg-[#003478] hover:bg-[#002456] text-white font-medium rounded-lg transition-colors duration-300 flex items-center justify-center group"
                     aria-label={`Contact us about ${service.title} services via WhatsApp`}
                   >
                     <span>{service.cta}</span>
-                    <svg 
-                      className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" 
-                      fill="none" 
-                      viewBox="0 0 24 24" 
+                    <svg
+                      className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300"
+                      fill="none"
+                      viewBox="0 0 24 24"
                       stroke="currentColor"
                       aria-hidden="true"
                     >

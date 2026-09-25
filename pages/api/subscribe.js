@@ -62,7 +62,7 @@ export default async function handler(req, res) {
           <li>Special announcements and initiatives</li>
         </ul>
         <p>Hare Krishna Hare Krishna, Krishna Krishna Hare Hare<br/>Hare Rama Hare Rama, Rama Rama Hare Hare</p>
-        <p>Your servants,<br/>Hare Krishna Home Deccor & Developers
+        <p>Your servants,<br/>Hare Krishna Projects
  Team</p>
       `,
     });
